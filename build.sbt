@@ -27,3 +27,5 @@ lazy val springBoot = MleapProject.springBootServing
 lazy val databricksRuntimeFat = MleapProject.databricksRuntimeFat
 lazy val databricksRuntime = MleapProject.databricksRuntime
 lazy val databricksRuntimeTestkit = MleapProject.databricksRuntimeTestkit
+//make a clean build without deprecations
+scalacOptions in Compile += "-deprecation"
